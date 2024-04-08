@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/about.css">
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@1,700&display=swap" rel="stylesheet">
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css" rel="stylesheet" />
+    <style>
+        .grid-item {
+            border: 1px solid #ccc;
+            padding: 20px;
+            text-align: center;
+            width: 300px;
+            height: 300px;
+            background-color: #f0f0f0;
+            margin: 23px;
+            transition: background-color 0.3s;
+        }
+
+        h4 {
+            color: #007bff;
+        }
+
+        .bg-color1 {
+            background-color: #ffd966;
+            border-radius: 15px;
+        }
+
+        .bg-color2 {
+            background-color: #a7d7a7;
+            border-radius: 15px;
+        }
+
+        .bg-color3 {
+            background-color: #f4a3a3;
+            border-radius: 15px;
+        }
+
+        .review-row {
+            background-color: #f3f3f3;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .card-img-top {
+            width: 100%;
+            height: auto;
+        }
+
+        .review-card {
+            margin-bottom: 20px;
+        }
+
+        .nav-link {
+            font-weight: 500;
+            position: relative;
+            background: linear-gradient(to right, rgb(62, 110, 241), rgb(231, 26, 250));
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-link:focus::after {
+            opacity: 1;
+            background: linear-gradient(to right, rgb(62, 110, 241), rgb(231, 26, 250));
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-link:focus {
+            opacity: 1;
+            background: linear-gradient(to right, rgb(62, 110, 241), rgb(231, 26, 250));
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav style="font-family: Signika Negative, sans-serif;" class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container">
+            <!--Logo-->
+            <a class="navbar-brand" href="index.html">
+                <img class="img-fluid" src="#" alt="Logo" width="200px" height="70px">
+            </a>
+            <!--Toggle button-->
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Sidebar-->
+            <div class="sidebar offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <!--Sidebar Header-->
+                <div class="offcanvas-header">
+                    <a class="navbar-brand" href="index.html">
+                        <img class="img-fluid" src="#" alt="Logo" width="200px" height="70px">
+                    </a>
+                    <button type="button" class="btn-close btn-close-black shadow-none" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <!--Sidebar Body-->
+                <div class="offcanvas-body d-flex flex-lg-row flex-column p-4 p-lg-0">
+                    <ul class="navbar-nav justify-content-md-start justify-content-lg-center fs-5 flex-grow-1 pe-3">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" aria-current="page" href="index.html" target="_self">Home</a>
+                        </li>
+                        <hr>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active" href="about.html" target="_self">About</a>
+                        </li>
+                        <hr>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="contactlogin.html">Contact Us</a>
+                        </li>
+                        <hr>
+                    </ul>
+                    <!--Login/Signup-->
+                    <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-0">
+                        <a href="login-1.html" class="text-black text-decoration-none px-3"><button type="button"
+                                class="btn log btn-outline-dark">Login</button></a>
+                        <a href="register.html" target="_blank" class="text-black text-decoration-none px-3"><button
+                                type="button" class="btn log btn-outline-dark">Signup</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--Main content-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="back d-flex flex-column">
+                    <div class="mt-3">
+                        <h3 class="fs-1" id="banner1">"Discover, Learn, Thrive Together"</h3>
+                    </div>
+                    <div>
+                        <p style="font-family: Signika Negative, sans-serif; font-size: larger;" class="text-black" id="banner2">We create
+                            an environment where everyone can explore, grow and succeed. Our team is dedicated to
+                            helping each student discover<br>their potential, learn effectively and thrive academically
+                            and personally. Join us on this journey of learning and community</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <h3 style="text-align: center; font-size: 50px">
+        We Provide...</h3>
+    <br>
+    <div class="container" style="font-family: Signika Negative, sans-serif;">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="bg-color1 mt-3 p-5">
+                    <h4 style="color: red;">Online/Offline Classes</h4>
+                    <p>Access our courses from anywhere, anytime with our online platform or join our physical
+                        classrooms for interactive sessions.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="bg-color2 mt-3 p-5">
+                    <h4 style="color: green;">Challenge/Task Based Training</h4>
+                    <p>Engage in hands-on learning experiences with our challenge and task-based training modules
+                        designed to enhance your skills.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="bg-color3 mt-3 p-5">
+                    <h4 style="color: blue;">Training in Native Language</h4>
+                    <p>Learn comfortably in your native language with our diverse language support, ensuring better
+                        understanding and communication.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="container" style="font-family: Signika Negative, sans-serif;">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="bg-color1 mt-3 p-5">
+                    <h4 style="color: red;">Flexible Time Schedule</h4>
+                    <p>Enjoy the convenience of flexible scheduling, allowing you to balance your learning with other
+                        commitments effortlessly.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="bg-color2 mt-3 p-5">
+                    <h4 style="color: green;">Placement Assistance</h4>
+                    <p>Benefit from our dedicated support in securing job placements, providing opportunities to
+                        kickstart your career journey.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="bg-color3 mt-3 p-5">
+                    <h4 style="color: blue;">Experienced Trainers</h4>
+                    <p>Learn from industry experts with extensive experience, gaining valuable insights and practical
+                        knowledge relevant to your field.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="student-reviews" class="review-row mt-5 bg-white" style="font-family: Signika Negative, sans-serif;">
+        <h3 style="text-align: center; margin-bottom: 30px;">Student Reviews</h3>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="card review-card p-1" style="box-shadow: rgba(0,0,0,0.35) 0px 5px 15px">
+                        <div class="row no-gutters">
+                            <div class="col-md-4" style="display: flex; justify-content:center; align-items:center;">
+                                <div class="rounded-circle border"
+                                    style="width: 150px; height: 150px; overflow: hidden;">
+                                    <img src="#" class="card-img-top mx-auto d-block" alt="ADITHYA RS">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">ADITHYA RS</h5>
+                                    <p class="card-text">"I've had an amazing experience with this educational
+                                        platform. The courses are comprehensive and well-structured, and the
+                                        instructors are highly knowledgeable."</p>
+                                    <p class="card-text"><small class="text-muted">Rated 5/5</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="card review-card p-2" style="box-shadow: rgba(0,0,0,0.35) 0px 5px 15px">
+                        <div class="row no-gutters">
+                            <div class="col-md-4" style="display: flex; justify-content:center; align-items:center;">
+                                <div class="rounded-circle border"
+                                    style="width: 150px; height: 150px; overflow: hidden;">
+                                    <img src="#" class="card-img-top mx-auto d-block" alt="anjana">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">ANJANA J NAIR</h5>
+                                    <p class="card-text">"I'm impressed by the quality of courses offered here. The
+                                        interactive learning modules have greatly enhanced my understanding of the
+                                        subjects."</p>
+                                    <p class="card-text"><small class="text-muted">Rated 5/5</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="card review-card p-1" style="box-shadow: rgba(0,0,0,0.35) 0px 5px 15px">
+                        <div class="row no-gutters">
+                            <div class="col-md-4" style="display: flex; justify-content:center; align-items:center;">
+                                <div class="rounded-circle border"
+                                    style="width: 150px; height: 150px; overflow: hidden;">
+                                    <img src="#" class="card-img-top mx-auto d-block" alt="VAISHNAVI S">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">VAISHNAVI S</h5>
+                                    <p class="card-text">"This educational platform has been a game-changer for me.
+                                        The flexibility of scheduling and the supportive community have made my
+                                        learning journey enjoyable and rewarding."</p>
+                                    <p class="card-text"><small class="text-muted">Rated 5/5</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer style="font-family: Signika Negative, sans-serif;" class="bg-body-tertiary container-fluid text-lg-start text-center">
+        <div class="scroll">
+            <marquee style="font-size:65px;" behavior="scroll" direction="left" scrollamount="14">WHERE DREAMS MEET
+                SOLUTIONS WHERE DREAMS MEET
+                SOLUTIONS WHERE DREAMS MEET SOLUTIONS WHERE DREAMS MEET
+                SOLUTIONS WHERE DREAMS MEET SOLUTIONS WHERE DREAMS MEET
+                SOLUTIONS</marquee>
+        </div>
+        <!-- Grid container -->
+        <div class="container pt-5 p-5 pb-0">
+            <!-- Section: Form -->
+            <section class="">
+                <form action="">
+                    <!--Grid row-->
+                    <div class="row d-flex justify-content-center">
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                </form>
+            </section>
+            <!-- Section: Form -->
+        </div>
+        <div class="container">
+            <div class="row">
+                <!--Keep exploring-->
+                <div class="col-md-3 text-lg-start text-center mt-4">
+                    <p class="pt-2 h4">
+                        <strong>Keep Exploring</strong>
+                    </p>
+                    <a href="index.html">
+                        <p>Home</p>
+                    </a>
+                    <a href="about.html">
+                        <p>About</p>
+                    </a>
+                    <a href="contactlogin.html">
+                        <p>Contact Us</p>
+                    </a>
+                    <a href="#">
+                        <p>Help</p>
+                    </a>
+                </div>
+                <!--Connect with us-->
+                <div class="col-md-3 d-flex flex-column gap-2 text-lg-start text-center mx-auto mt-4">
+                    <p class="pt-2 h4">
+                        <strong>Connect with us</strong>
+                    </p>
+                    <a href="https://ananthakrishnanjs816@gmail.com" class="me-2 text-reset">
+                        <i class="fab fa-google"></i>&nbsp;&nbsp;&nbsp;Ak@gmail.com
+                    </a>
+                    <a href="https://www.instagram.com/_ananthanjs/?igsh=Z3RtcHg2aHYzaDcx" class="me-2 text-reset">
+                        <i class="fab px-1 fa-instagram"></i>&nbsp;&nbsp;&nbsp;Ak
+                    </a>
+                    <a href="https://www.linkedin.com/in/ananthakrishnan-j-s/" class="me-2 text-reset">
+                        <i class="fab px-1 fa-linkedin-in"></i>&nbsp;&nbsp;&nbsp;Ak
+                    </a>
+                    <a href=" https://wa.me/7907255115" class="me-2 text-reset">
+                        <i class="fab px-1 fa-whatsapp"></i>&nbsp;&nbsp;&nbsp;+91 9746828509
+                    </a>
+                </div>
+                <!--Stay in the know-->
+                <div class="col-md-6 text-lg-start text-center mx-auto mt-4">
+                    <p class="pt-2 h4">
+                        <strong>Stay in the know</strong>
+                    </p>
+                    <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nulla, magnam
+                        voluptate
+                        tenetur est eius repudiandae eum dolorum reprehenderit reiciendis accusamus et dolor
+                        nihil sint assumenda architecto fugit pariatur recusandae.</p>
+                    <form class="row g-3 mt-4">
+                        <div class="col-md-5 d-grid gap-2 d-md-flex">
+                            <input type="email" placeholder="Email Address"
+                                class="p-1 transparent-input text-center form-control rounded-pill border border-black">
+                        </div>
+                        <div class="col-md-5">
+                            <a class="btn border rounded-pill border-black" href="#" role="button">Sign Up</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <hr class="newhr mt-5">
+            <div class="row mt-5">
+                <div class="col-md-12 text-sm-center text-md-center">
+                    <h6>
+                        Copyright © 2024 Educations.
+                    </h6>
+                    <h6>
+                        <a class="text-body" href="#">Site credits |</a>
+                        <a class="text-body" href="#">Terms & Conditions |</a>
+                        <a class="text-body" href="#">Privacy Policy</a>
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
